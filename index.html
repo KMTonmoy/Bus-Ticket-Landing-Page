@@ -162,22 +162,24 @@
             <div class="md:flex justify-between w-full items-center">
                 <div class="w-full">
                     <div class="md:flex justify-between mb-5 w-full">
-                        <div class="flex gap-4">
+                        <div class="flex flex-col md:flex-row items-center gap-4">
                             <img class="w-16 h-12" src="images/bus-logo.png" alt="">
                             <div>
                                 <h1 class="text-[#030712] font-raleway text-[32px] font-bold">Greenline Paribahan</h1>
                                 <p class="font-inter text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
+                    <div class="flex justify-center">
                         <button
-                            class="btn border-2 rounded-xl bg-[#1dff001a]   text-xl font-raleway text-[#1cd100] font-bold">
-                            <img src="images/seat-green.png" alt="" role="dialog" id="my_modal_9">
-                            <span id="leftSeat">40</span>
-                            Seats left
-                        </button>
+                        class=" btn border-2 rounded-xl bg-[#1dff001a]   text-xl font-raleway text-[#1cd100] font-bold">
+                        <img src="images/seat-green.png" alt="" role="dialog" id="my_modal_9">
+                        <span id="leftSeat">40</span>
+                        Seats left
+                    </button>
+                    </div>
                     </div>
 
-                    <div class="md:flex justify-between mb-5 w-full">
+                    <div class="flex flex-col md:flex-row items-center mb-5 w-full">
 
                         <div>
                             <p class="font-inter text-lg text-[#03071299]">Route</p>
@@ -188,7 +190,7 @@
 
 
                     </div>
-                    <div class="md:flex justify-between mb-8 w-full">
+                    <div class="flex flex-col md:flex-row items-center mb-8 w-full">
 
                         <div>
                             <p class="font-inter text-lg text-[#03071299]">Departure Time</p>
@@ -200,7 +202,7 @@
 
                     </div>
 
-                    <div class="md:flex justify-between w-full">
+                    <div class=" flex flex-col  justify-center gap-5 md:gap-0 md:flex-row md:justify-between w-full">
                         <button class="btn">Boarding Point - Laxmipur</button>
                         <button class="btn">Dropping Point - Bogura</button>
                         <button class="btn">Est. Time - 11 Hour</button>
@@ -208,13 +210,9 @@
 
 
 
-
-
-
-
                 </div>
-                <div class="w-1/3 flex justify-around">
-                    <img src="images/info-devider.png" alt="">
+                <div class="w-full flex-col md:flex-row md:w-1/3 flex justify-around items-center">
+                    <img class="hidden md:block " src="images/info-devider.png" alt="">
                     <div class="flex flex-col justify-center items-center w-1/3">
                         <img src="images/fare.png" alt="">
                         <h1 class='text-2xl font-bold font-raleway '><span>550</span>Taka</h1>
@@ -226,8 +224,8 @@
 
 
             <div class="mt-5">
-                <div class="flex justify-between gap-11">
-                    <div class="w-1/2 p-5 ">
+                <div class="flex flex-col md:flex-row justify-between gap-11">
+                    <div class="w-full md:w-1/2 p-5 ">
                         <h1 class="font-raleway text-2xl font-semibold"> Select Your Seat</h1>
                         <div class="flex justify-between mb-[50px]">
                             <p class="flex gap-2 text-[#030712] font-inter text-lg mt-5"><img src="images/seat-gray.png"
@@ -236,124 +234,124 @@
                                     src="images/seat-green-filled.png" alt="">Selected</p>
                         </div>
                         <div>
-                            <div class="flex justify-end mb-3">
+                            <div class="flex justify-center md:justify-end mb-3">
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712]"><img
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712]"><img
                                         src="images/wheel.png" alt=""></button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>A</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">A1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">A1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">A2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">A2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">A3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">A3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">A4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">A4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>B</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">B1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">B1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">B2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">B2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">B3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">B3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">B4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">B4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>C</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">C1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">C1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">C2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">C2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">C3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">C3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">C4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">C4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>D</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">D1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">D1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">D2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">D2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">D3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">D3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">D4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">D4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>E</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">E1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">E1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">E2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">E2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">E3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">E3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">E4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">E4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>F</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">F1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">F1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">F2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">F2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">F3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">F3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">F4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">F4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>G</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">G1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">G1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">G2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">G2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">G3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">G3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">G4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">G4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>H</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">H1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">H1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">H2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">H2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">H3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">H3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">H4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">H4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>I</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">I1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">I1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">I2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">I2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">I3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">I3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">I4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">I4</button>
                             </div>
-                            <div class="flex justify-between items-center mb-3">
+                            <div class="flex flex-col md:flex-row  justify-center md:justify-between items-center mb-3">
                                 <p>J</p>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">J1</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">J1</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">J2</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">J2</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">J3</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">J3</button>
                                 <button
-                                    class="btn text-lg font-medium font-inter w-[110px] h-[56px] text-[#030712] seatBtn">J4</button>
+                                    class="btn text-lg font-medium font-inter w-full md:w-[110px] h-[56px] text-[#030712] seatBtn mb-4 md:mb-0">J4</button>
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/2 border-dashed border-l-2 border-[bg-[#f7f8f8]] p-5 ">
+                    <div class="w-full md:w-1/2 border-dashed border-l-2 border-[bg-[#f7f8f8]] p-5 ">
                         <h1 class="font-raleway text-2xl font-semibold"> Select Your Seat</h1>
 
                         <div class="mt-4 p-5">
@@ -370,8 +368,8 @@
 
 
 
-                                </div>
-                <div class="flex justify-between font-inter text-[#030712] text-base font-medium">
+                                   </div>
+                         <div class="flex justify-between font-inter text-[#030712] text-base font-medium">
                                     <h1>Total Price</h1>
                                     <h1>BDT <span id="totalCost">0</span></h1>
                                 </div>
@@ -381,7 +379,7 @@
                                 </div>
 
                                 <div class="flex justify-center my-4" id="discountFild">
-                                    <input required class="w-[369px] h-[56px] px-3 ou pl-3 tline-none" type="text"
+                                    <input required class="w-full md:w-[369px] h-[56px] px-3 ou pl-3 tline-none" type="text"
                                         name="" placeholder="Have any copupon?" id="inputQupon">
                                     <button
                                         class="-ml-3 rounded-lg bg-[#1cd100]  p-3 font-inter font-semibold text-base text-white"
@@ -409,18 +407,18 @@
                                     Passenger Name*
                                 </label>
                                 <input id="name" required type="text" name="name"
-                                    class="  pl-3 w-[433px] h-[64px] outline-none" placeholder="Enter your name"><br>
+                                    class="  pl-3 w-full  md:w-[433px] h-[64px] outline-none" placeholder="Enter your name"><br>
                                 <label class="text-[#030712] font-semibold text-base font-inter" for="number">
                                     Phone Number*
                                 </label>
                                 <input id="number" required name="number" type="number"
-                                    class=" pl-3 w-[433px] h-[64px] outline-none"
+                                    class=" pl-3 w-full  md:w-[433px] h-[64px] outline-none"
                                     placeholder="Enter your phone number"><br>
                                 <label class="text-[#030712] font-semibold text-base font-inter" for="email">
                                     Email ID
                                 </label>
                                 <input id="email" required name="email" type="email"
-                                    class=" pl-3 w-[433px] h-[64px] outline-none" placeholder="Enter your email id">
+                                    class=" pl-3 w-full  md:w-[433px] h-[64px] outline-none" placeholder="Enter your email id">
 
 
 
@@ -467,7 +465,7 @@
 
 
     <footer id="footer" class="py-16 px-10 bg-[#030712] text-neutral-100 mt-6">
-        <div class="flex border-b-2 border-dashed border-[#3c3d41] pb-5 justify-between items-center w-full">
+        <div class="border-b-2 border-dashed border-[#3c3d41] pb-5 flex justify-center flex-col md:flex-row md:justify-between w-full">
             <aside>
                 <h1 class="text-white font-bold text-4xl ">P-Ticket</h1>
                 <p class="text-lg font-normal text-[#ffffffcc]">P-Ticket is a digital platform to make your <br> daily
@@ -484,13 +482,13 @@
                 </div>
             </nav>
         </div>
-        <div class="py-5 flex justify-between items-center w-full">
+        <div class="py-5 flex justify-center flex-col md:flex-row md:justify-between items-center w-full">
             <aside>
 
-                <p class="text-lg font-normal text-[#ffffffcc]">@all rights reserved, P-Ticket services limited.2024</p>
+                <p class="text-xs md:text-lg font-normal  text-[#ffffffcc]">@all rights reserved, P-Ticket services limited.2024</p>
             </aside>
             <nav>
-                <div class="flex justify-around gap-5">
+                <div class="flex justify-center items-center flex-col md:flex-row md:justify-between ">
                     <a href="">Terms & condition</a>
                     <a href="">Return & refund policy</a>
                     <a href="">Privacy policy</a>

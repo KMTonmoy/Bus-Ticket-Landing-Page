@@ -27,6 +27,7 @@ for (const btn of allSeatBtn) {
 
                 totalCost += 550;
                 document.getElementById("totalCost").innerText = totalCost;
+                document.getElementById("grandTotal").innerText = totalCost;
             } else {
                 alert("You can only select up to 4 seats.");
             }
@@ -49,11 +50,13 @@ document.getElementById("apply").addEventListener("click", function () {
         Discount.innerText = new15Discount;
         grandTotal.innerText = total - new15Discount;
         discountCon.classList.remove("hidden");
+        discountField.classList.add("hidden");
     } else if (couponInput === "Couple 20") {
         const couple20Discount = total * 20 / 100;
         Discount.innerText = couple20Discount;
         grandTotal.innerText = total - couple20Discount;
         discountCon.classList.remove("hidden");
+        discountField.classList.add("hidden");
     } else {
         discountField.classList.add("hidden");
     }
