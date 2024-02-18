@@ -4,11 +4,11 @@ const seatLimit = 4;
 let freeseat = 40;
 
 const allSeatBtn = document.getElementsByClassName("seatBtn");
-
+const applyBtn = document.getElementById("apply")
 for (const btn of allSeatBtn) {
     btn.addEventListener("click", function () {
         if (!btn.classList.contains("bg-[#1cd100]")) {
-            if (seatQuan < seatLimit) {
+            if (seatQuan <= seatLimit) {
                 btn.classList.add("bg-[#1cd100]", "text-white");
                 seatQuan++;
                 freeseat--;
@@ -28,8 +28,15 @@ for (const btn of allSeatBtn) {
                 totalCost += 550;
                 document.getElementById("totalCost").innerText = totalCost;
                 document.getElementById("grandTotal").innerText = totalCost;
-                apply.removeAttribute("disabled");
-            } else {
+
+
+                if (seatQuan === 4) {
+                    applyBtn.removeAttribute("disabled");
+                }
+
+
+            }
+            else {
                 alert("You can only select up to 4 seats.");
             }
         } else {
@@ -51,47 +58,44 @@ document.getElementById("apply").addEventListener("click", function () {
         Discount.innerText = new15Discount;
         grandTotal.innerText = total - new15Discount;
         discountCon.classList.remove("hidden");
-        apply.setAttribute("disabled", true);
-        discountField.setAttribute("readonly", true);
+        discountField.classList.add("hidden")
     } else if (couponInput === "couple 20") {
         const couple20Discount = total * 20 / 100;
         Discount.innerText = couple20Discount;
         grandTotal.innerText = total - couple20Discount;
         discountCon.classList.remove("hidden");
-        apply.setAttribute("disabled", true);
-        discountField.setAttribute("readonly", true);
-    } else {
+        discountField.classList.add("hidden")
+    } else if (couponInput === " ") {
+        alert("Please provide a valid coupon code to proceed to the next step.")
+    }
+    else {
+        alert("This coupon code is not valid. Please provide a valid coupon code.")
         discountField.classList.add("hidden");
+
     }
 });
 
 document.getElementById("next").addEventListener('click', function () {
-    const inputname = document.getElementById("name").value;
     const inputnumber = document.getElementById("number").value;
-    const inputemail = document.getElementById("email").value;
 
-    if (seatQuan !== 0 && inputname.trim() !== '' && inputnumber.trim() !== '' && inputemail.trim() !== '') {
+
+    if (seatQuan !== 0 && inputnumber.trim() !== '') {
         document.location = '#my_modal_8';
     } else {
         alert("Please book a seat and fill all information.");
     }
 });
 
-function nextBtnDisAndEnable() {
-    const nextButton = document.getElementById("next");
-    const inputname = document.getElementById("name").value;
-    const inputnumber = document.getElementById("number").value;
-    const inputemail = document.getElementById("email").value;
 
-    nextButton.disabled = !(seatQuan > 0 && inputname.trim() !== '' && inputnumber.trim() !== '' && inputemail.trim() !== '');
+function nextBtnDisAndEna() {
+    const nextButton = document.getElementById("next");
+    const inputnumber = document.getElementById("number").value;
+    nextButton.disabled = !(seatQuan > 0 && inputnumber.trim() !== '');
+
 }
 
-
-document.getElementById("name").addEventListener('input', nextBtnDisAndEnable);
-document.getElementById("number").addEventListener('input', nextBtnDisAndEnable);
-document.getElementById("email").addEventListener('input', nextBtnDisAndEnable);
-
-nextBtnDisAndEnable();
+document.getElementById("number").addEventListener('input', nextBtnDisAndEna);
+nextBtnDisAndEna();
 
 
 document.getElementById("buytick").addEventListener("click", function () {
