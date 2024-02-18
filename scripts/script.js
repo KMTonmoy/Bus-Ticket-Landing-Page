@@ -39,21 +39,21 @@ for (const btn of allSeatBtn) {
 }
 
 document.getElementById("apply").addEventListener("click", function () {
-    const couponInput = document.getElementById("inputQupon").value.trim();
+    const couponInput = document.getElementById("inputQupon").value.trim().toLowerCase();
     const total = parseInt(document.getElementById("totalCost").innerText);
     const discountCon = document.getElementById("discountCon");
     const discountField = document.getElementById("discountFild");
     const Discount = document.getElementById("Discount");
     const grandTotal = document.getElementById("grandTotal");
 
-    if (couponInput === "NEW15") {
+    if (couponInput === "new15") {
         const new15Discount = total * 15 / 100;
         Discount.innerText = new15Discount;
         grandTotal.innerText = total - new15Discount;
         discountCon.classList.remove("hidden");
         apply.setAttribute("disabled", true);
         discountField.setAttribute("readonly", true);
-    } else if (couponInput === "Couple 20") {
+    } else if (couponInput === "couple 20") {
         const couple20Discount = total * 20 / 100;
         Discount.innerText = couple20Discount;
         grandTotal.innerText = total - couple20Discount;

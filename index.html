@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="banner mt-7  ">
-            <div class="hero h-[550px] md:w-[1171px]"
+            <div class="hero h-[550px] md:max-w-[1171px]"
                 style="background:linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%), url(images/banner.png); border-radius: 32px;">
                 <div class="hero-content text-center text-neutral-content">
                     <div>
@@ -79,12 +79,14 @@
                         <p class="mb-5 font-normal text-sm md:text-lg font-inter
                          md:px-48">Experience seamless bus ticketing with P Paribahan. Book your journeys effortlessly
                             and access tickets instantly on our user-friendly platform.</p>
-                        <button class="btn text-[#030712] font-inter bg-[#1cd100] border-none text-xl font-bold" id="buytick">Buy
+                        <button class="btn text-[#030712] font-inter bg-[#1cd100] border-none text-xl font-bold"
+                            id="buytick">Buy
                             Tickets</button>
                     </div>
                 </div>
             </div>
-            <div class=" flex flex-col md:flex-row items-center gap-5 justify-center md:justify-around md:-mt-12  ">
+            <div
+                class=" w-full md:max-w-[1170px] flex flex-col md:flex-row items-center gap-5 justify-center md:justify-around md:-mt-12  ">
                 <div
                     class="border-b-2 border-[#1cd100] w-[308px] rounded-3xl h-[138px]  bg-[#ffffff]  items-center  flex justify-around">
                     <img src="images/people.png" alt="">
@@ -169,14 +171,14 @@
                                 <p class="font-inter text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                    <div class="flex justify-center">
-                        <button
-                        class=" btn border-2 rounded-xl bg-[#1dff001a]   text-xl font-raleway text-[#1cd100] font-bold">
-                        <img src="images/seat-green.png" alt="" role="dialog" id="my_modal_9">
-                        <span id="leftSeat">40</span>
-                        Seats left
-                    </button>
-                    </div>
+                        <div class="flex justify-center">
+                            <button
+                                class=" btn border-2 rounded-xl bg-[#1dff001a]   text-xl font-raleway text-[#1cd100] font-bold">
+                                <img src="images/seat-green.png" alt="" role="dialog" id="my_modal_9">
+                                <span id="leftSeat">40</span>
+                                Seats left
+                            </button>
+                        </div>
                     </div>
 
                     <div class="flex flex-col justify-between md:flex-row items-center mb-5 w-full">
@@ -368,19 +370,20 @@
 
 
 
-                                   </div>
-                         <div class="flex justify-between font-inter text-[#030712] text-base font-medium">
+                                </div>
+                                <div class="flex justify-between font-inter text-[#030712] text-base font-medium">
                                     <h1>Total Price</h1>
                                     <h1>BDT <span id="totalCost">0</span></h1>
                                 </div>
-               <div   class="flex justify-between font-inter text-[#030712] text-base font-medium hidden"  id="discountCon">
+                                <div class="flex justify-between font-inter text-[#030712] text-base font-medium hidden"
+                                    id="discountCon">
                                     <h1 id="discountTitle">Discount</h1>
                                     <h1 id="discountBdt">BDT <span id="Discount">0</span></h1>
                                 </div>
 
                                 <div class="flex justify-center my-4" id="discountFild">
-                                    <input required class="w-full md:w-[369px] h-[56px] px-3 ou pl-3 tline-none" type="text"
-                                        name="" placeholder="Have any copupon?" id="inputQupon" >
+                                    <input required class="w-full md:w-[369px] h-[56px] px-3 ou pl-3 tline-none"
+                                        type="text" name="" placeholder="Have any copupon?" id="inputQupon">
                                     <button
                                         class="-ml-3 rounded-lg bg-[#1cd100]  p-3 font-inter font-semibold text-base text-white"
                                         id="apply" disabled>Apply</button>
@@ -407,7 +410,8 @@
                                     Passenger Name*
                                 </label>
                                 <input id="name" required type="text" name="name"
-                                    class="  pl-3 w-full  md:w-[433px] h-[64px] outline-none" placeholder="Enter your name"><br>
+                                    class="  pl-3 w-full  md:w-[433px] h-[64px] outline-none"
+                                    placeholder="Enter your name"><br>
                                 <label class="text-[#030712] font-semibold text-base font-inter" for="number">
                                     Phone Number*
                                 </label>
@@ -418,12 +422,14 @@
                                     Email ID
                                 </label>
                                 <input id="email" required name="email" type="email"
-                                    class=" pl-3 w-full  md:w-[433px] h-[64px] outline-none" placeholder="Enter your email id">
+                                    class=" pl-3 w-full  md:w-[433px] h-[64px] outline-none"
+                                    placeholder="Enter your email id">
 
 
 
                                 <button id="next"
-                                    class="-ml-3 rounded-lg bg-[#1cd100]  p-3 font-inter font-semibold text-base text-center text-white mt-5" disabled>NEXT</button>
+                                    class="-ml-3 rounded-lg bg-[#1cd100]  p-3 font-inter font-semibold text-base text-center text-white mt-5"
+                                    disabled>NEXT</button>
 
 
                                 <div class="modal text-center" role="dialog" id="my_modal_8">
@@ -465,7 +471,8 @@
 
 
     <footer id="footer" class="py-16 px-10 bg-[#030712] text-neutral-100 mt-6">
-        <div class="border-b-2 border-dashed border-[#3c3d41] pb-5 flex justify-center flex-col md:flex-row md:justify-between w-full">
+        <div
+            class="border-b-2 border-dashed border-[#3c3d41] pb-5 flex justify-center flex-col md:flex-row md:justify-between w-full">
             <aside>
                 <h1 class="text-white font-bold text-4xl ">P-Ticket</h1>
                 <p class="text-lg font-normal text-[#ffffffcc]">P-Ticket is a digital platform to make your <br> daily
@@ -485,7 +492,8 @@
         <div class="py-5 flex justify-center flex-col md:flex-row md:justify-between items-center w-full">
             <aside>
 
-                <p class="text-xs md:text-lg font-normal  text-[#ffffffcc]">@all rights reserved, P-Ticket services limited.2024</p>
+                <p class="text-xs md:text-lg font-normal  text-[#ffffffcc]">@all rights reserved, P-Ticket services
+                    limited.2024</p>
             </aside>
             <nav>
                 <div class="flex justify-center items-center flex-col md:flex-row md:justify-between ">
