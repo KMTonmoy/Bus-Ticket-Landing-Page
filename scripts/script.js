@@ -7,7 +7,7 @@ const allSeatBtn = document.getElementsByClassName("seatBtn");
 
 for (const btn of allSeatBtn) {
     btn.addEventListener("click", function () {
-        if (!btn.classList.contains("bg-[#1cd100]")) { 
+        if (!btn.classList.contains("bg-[#1cd100]")) {
             if (seatQuan < seatLimit) {
                 btn.classList.add("bg-[#1cd100]", "text-white");
                 seatQuan++;
@@ -31,7 +31,7 @@ for (const btn of allSeatBtn) {
                 alert("You can only select up to 4 seats.");
             }
         } else {
-            alert("You have already selected this seat.");  
+            alert("You have already selected this seat.");
         }
     });
 }
@@ -64,11 +64,30 @@ document.getElementById("next").addEventListener('click', function () {
     const inputnumber = document.getElementById("number").value;
     const inputemail = document.getElementById("email").value;
 
-    if (seatQuan === 0) {
-        alert("Please Book A Seat")
-    } else if (inputname === '' || inputnumber === '' || inputemail === "") {
-        alert("Please Add Your Information.")
+    if (seatQuan !== 0 && inputname.trim() !== '' && inputnumber.trim() !== '' && inputemail.trim() !== '') {
+        document.location = '#my_modal_8';
     } else {
-        document.location = '#my_modal_8'
+        alert("Please book a seat and fill all information.");
     }
 });
+
+function nextBtnDisAndEnable() {
+    const nextButton = document.getElementById("next");
+    const inputname = document.getElementById("name").value;
+    const inputnumber = document.getElementById("number").value;
+    const inputemail = document.getElementById("email").value;
+
+    nextButton.disabled = !(seatQuan > 0 && inputname.trim() !== '' && inputnumber.trim() !== '' && inputemail.trim() !== '');
+}
+
+
+document.getElementById("name").addEventListener('input', nextBtnDisAndEnable);
+document.getElementById("number").addEventListener('input', nextBtnDisAndEnable);
+document.getElementById("email").addEventListener('input', nextBtnDisAndEnable);
+
+nextBtnDisAndEnable();
+
+
+document.getElementById("buytick").addEventListener("click", function () {
+    document.location = "#my_modal_9"
+})
